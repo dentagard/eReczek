@@ -1,0 +1,143 @@
+/*
+Theme Name: eReczek
+Author: Piotr Reczek
+Author URI: http://ereczek.pl
+Description: eReczek home page.
+Version: 1.0
+Text Domain: eReczek
+*/
+
+.bg-primary {
+    background-color: white !important
+}
+
+.showcase {
+    margin-top: 58px
+}
+
+.block {
+    text-align: center;
+    padding: 10px 20px 10px 20px;
+    border: 5px solid white
+}
+
+.block-primary {
+    background-color: #cccccc
+}
+
+.block-secondary {
+    background-color: #a6a6a6
+}
+
+.section-b {
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+
+.section-b .img-block {
+    max-width: 100%
+}
+
+.section-b h2 {
+    text-align: center;
+    color: black
+}
+
+.section-c {
+    background: url("img/iphone-lg.jpg") no-repeat center center;
+    margin-top: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    color: white
+}
+
+.section-c h2 {
+    text-align: center
+}
+
+.section-c .btn-primary {
+    background-color: white !important;
+    border-color: #cccccc !important;
+    color: black
+}
+
+.section-c .btn-primary:hover {
+    background-color: #ccc !important
+}
+
+.section-c .op-05 {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white
+}
+
+.section-c .border-white {
+    border: 2px solid #fff !important
+}
+
+.section-c ::placeholder {
+    color: #b4b4b4
+}
+
+.section-c .result {
+    padding-bottom: 10px
+}
+
+.section-c .msg {
+    border: 1px solid;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 5px;
+    margin: 3px
+}
+
+.section-c .error {
+    color: #ff9999
+}
+
+.section-c .success {
+    color: #bbff99
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-weight: bold;
+    font-size: 40px;
+    width: 40%;
+    text-align: center;
+    border: 3px solid #fff;
+    z-index: 999
+}
+
+.pt-6 {
+    padding-top: 57px
+}
+
+@media (max-width:800px) {
+    .centered {
+        font-size: 100%
+    }
+    .showcase {
+        min-height: 300px
+    }
+    .showcase img {
+        height: 300px;
+        object-fit: cover
+    }
+    .float-left-on-small {
+        float: left !important
+    }
+}
+
+@media (max-width:400px) {
+    .resize {
+        font-size: 100%;
+        padding-left: 10px !important;
+        padding-right: 10px !important
+    }
+}
