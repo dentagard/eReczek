@@ -1,23 +1,20 @@
-
-$('.owl-carousel').owlCarousel(
-    {
-        "autoplay": true,
-        "autoplayTimeout": 4000,
-        "items": 1,
-        "loop": true,
-        "itemsDesktop": [1199, 3],
-        "itemsDesktopSmall": [979, 3],
-        "nav": false,
-        "dots": true,
-        "onInitialized": "setDots",
-        "onChanged": "setDots",
-        "slideBy": 1,
-        "animateOut": "fadeOut"
-    }
-);
+$('.owl-carousel').owlCarousel({
+    "autoplay": true,
+    "autoplayTimeout": 4000,
+    "items": 1,
+    "loop": true,
+    "itemsDesktop": [1199, 3],
+    "itemsDesktopSmall": [979, 3],
+    "nav": false,
+    "dots": true,
+    "onInitialized": "setDots",
+    "onChanged": "setDots",
+    "slideBy": 1,
+    "animateOut": "fadeOut"
+});
 
 
-$("#contact-form").submit(function (event) {
+$("#contact-form").submit(function(event) {
     event.preventDefault();
 
     // /* get some values from elements on the page: */
@@ -37,15 +34,15 @@ $("#contact-form").submit(function (event) {
     });
 
     // /* Put the results in a div */
-    posting.done(function (data) {
+    posting.done(function(data) {
         $("#result").empty();
         content = jQuery.parseJSON(data);
+        console.log(content);
         if (content.errors && content.errors.length) {
             content.errors.forEach((element) => {
                 $("#result").append('<div class="msg error" >' + element.msg + '</div>');
             });
-        }
-        else if (content.success && content.success.length) {
+        } else if (content.success && content.success.length) {
             content.success.forEach((element) => {
                 $("#result").append('<div class="msg success" >' + element.msg + '</div>');
             });

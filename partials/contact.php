@@ -2,11 +2,11 @@
   <div class="container">
     <h2>Kontakt</h2>
     <div id="result" class="result">
-      <div class="msg error">Podaj email</div>
+      <!-- <div class="msg error">Podaj email</div>
       <div class="msg error">Podaj imię</div>
       <div class="msg error">Podaj nazwisko</div>
       <div class="msg error">Uzupełnij treść wiadomości</div>
-      <div class="msg success">Twoja wiadomość została wysłana</div>
+      <div class="msg success">Twoja wiadomość została wysłana</div> -->
     </div>
     <div class="row">
       <div class="col-md-6">
@@ -18,7 +18,7 @@
     </div>
 
     <p class="h5">Lub napisz wiadomość:</p>
-    <form id="contact-form" class="needs-validation" method="post" action="#" novalidate>
+    <form id="contact-form" class="needs-validation" method="post" action="<?php bloginfo('template_url'); ?>/send_email.php" novalidate>
       <div class="container">
         <div class="form-row">
           <div class="col-md-4 mb-3">
