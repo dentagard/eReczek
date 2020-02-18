@@ -36,6 +36,7 @@ $("#contact-form").submit(function(event) {
     // /* Put the results in a div */
     posting.done(function(data) {
         $("#result").empty();
+        console.log(data);
         content = jQuery.parseJSON(data);
         console.log(content);
         if (content.errors && content.errors.length) {
