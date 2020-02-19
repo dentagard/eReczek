@@ -39,14 +39,14 @@ function mailerConfig(PHPMailer $mailer)
 {
     // $mailer->SMTPDebug = SMTP::DEBUG_SERVER;
     $mailer->isSMTP();
-    $mailer->Host       = 'hosting2038788.online.pro ';
-    $mailer->SMTPAuth   = true;
-    $mailer->SMTPSecure = 'ssl';
-    $mailer->Username   = 'kontakt@ereczek.pl';
-    $mailer->Password   = 'Barbados1?';
-    $mailer->Port       = 465;
-    $mailer->From = 'kontakt@ereczek.pl';
-    $mailer->FromName = 'eReczek';
+    $mailer->Host       = SMTP_HOST;
+    $mailer->SMTPAuth   = SMTP_AUTH;
+    $mailer->SMTPSecure = SMTP_SECURE;
+    $mailer->Username   = SMTP_USERNAME;
+    $mailer->Password   = SMTP_PASSWORD;
+    $mailer->Port       = SMTP_PORT;
+    $mailer->From       = SMTP_FROM;
+    $mailer->FromName   = SMTP_FROM_NAME;
 }
 
 
@@ -89,7 +89,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         } else {
             $error['msg'] = 'Nie udało się wysłać Twojej wiadomości.';
             $errors[] = $error;
-            $response['errors'] = $error;
+            $response['errors'] = $errors;
         }
 
         if (sendEmailToClient($_POST['message'], $_POST['name'], $_POST['surname'], $_POST['email'])) {
@@ -99,7 +99,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         } else {
             $error['msg'] = 'Nie udało się wysłać kopii Twojej wiadomości.';
             $errors[] = $error;
-            $response['errors'] = $error;
+            $response['errors'] = $errors;
         }
     }
 
