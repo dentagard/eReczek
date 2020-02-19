@@ -15,6 +15,8 @@
     <link href="<?php bloginfo('template_url') ?>/owl/dist/assets/owl.theme.default.min.css" rel="stylesheet" />
     <link href="<?php bloginfo('template_url') ?>/fontawesome/css/all.css" rel="stylesheet" />
     <link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet" />
+
+    <?php wp_head() ?>
 </head>
 
 <body>
