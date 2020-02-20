@@ -2,15 +2,10 @@
   <div class="container">
     <h2>Kontakt</h2>
     <div id="result" class="result">
-      <!-- <div class="msg error">Podaj email</div>
-      <div class="msg error">Podaj imię</div>
-      <div class="msg error">Podaj nazwisko</div>
-      <div class="msg error">Uzupełnij treść wiadomości</div>
-      <div class="msg success">Twoja wiadomość została wysłana</div> -->
     </div>
     <div class="row">
       <div class="col-md-6">
-        <a class="h5 text-white" href="mailto: abc@example.com">Napisz mejla: adres@mejlowy.com</a>
+        <a class="h5 text-white" href="mailto: abc@example.com">Napisz mejla: kontakt@ereczek.pl</a>
       </div>
       <div class="col-md-6">
         <p class="h5 float-right float-left-on-small">Zadzwoń: (+48) 501 383 149</p>
@@ -18,7 +13,7 @@
     </div>
 
     <p class="h5">Lub napisz wiadomość:</p>
-    <form id="contact-form" class="needs-validation" method="post" action="<?php bloginfo('template_url'); ?>/send_email.php" novalidate>
+    <form id="contact-form" class="needs-validation" method="post" action="<?php echo admin_url('admin-ajax.php')?>" novalidate>
       <div class="container">
         <div class="form-row">
           <div class="col-md-4 mb-3">

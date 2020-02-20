@@ -25,8 +25,18 @@ $("#contact-form").submit(function(event) {
     let message = $form.find('#message').val();
     let url = $form.attr('action');
 
+    console.log('Data sent: ');
+
+    console.log(name);
+    console.log(surname);
+    console.log(email);
+    console.log(message);
+    console.log(url);
+
+
     /* Send the data using post */
     var posting = $.post(url, {
+        action: 'sendEmail',
         name: name,
         surname: surname,
         email: email,
@@ -36,6 +46,7 @@ $("#contact-form").submit(function(event) {
     // /* Put the results in a div */
     posting.done(function(data) {
         $("#result").empty();
+        console.log("Duspko");
         console.log(data);
         content = jQuery.parseJSON(data);
         console.log(content);

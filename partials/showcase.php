@@ -1,10 +1,10 @@
 <section class="showcase">
     <div class="owl-carousel owl-theme ">
         <div>
-            <img class="crop" src="<?php bloginfo('template_url') ?>/img/6.jpg">
+            <img class="crop" src="<?php bloginfo('template_url') ?>/img/5.jpg">
         </div>
         <div>
-            <img class="crop" src="<?php bloginfo('template_url') ?>/img/5.jpg">
+            <img class="crop" src="<?php bloginfo('template_url') ?>/img/6.jpg">
             <div class="centered">eReczek</div>
         </div>
         <div>

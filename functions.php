@@ -1,11 +1,7 @@
 <?php
-require_once("../../../wp-load.php");
 add_action('phpmailer_init', 'mailerConfig', 10, 1);
-// add_action('wp_mail_failed', 'log_mailer_errors', 10, 1);
-// function log_mailer_errors($wp_error)
-// {
-//     // echo $wp_error->get_error_message();
-// }
+add_action( 'wp_ajax_nopriv_sendEmail', 'sendEmail' );
+add_action( 'wp_ajax_sendEmail', 'sendEmail' );
 
 
 function validate()
@@ -78,7 +74,8 @@ function sendEmailToClient($message, $name, $surname, $to)
 }
 
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+// if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+function sendEmail() {
     $response['errors'] =  validate();
 
     if (count($response['errors']) === 0) {
@@ -104,5 +101,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     echo json_encode($response);
-    exit;
+    // exit;
+    die();
 }
