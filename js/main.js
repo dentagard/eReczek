@@ -16,7 +16,6 @@ $('.owl-carousel').owlCarousel({
 
 $("#contact-form").submit(function(event) {
     event.preventDefault();
-
     // /* get some values from elements on the page: */
     let $form = $(this);
     let name = $form.find('#name').val();
@@ -24,15 +23,6 @@ $("#contact-form").submit(function(event) {
     let email = $form.find('#email').val();
     let message = $form.find('#message').val();
     let url = $form.attr('action');
-
-    console.log('Data sent: ');
-
-    console.log(name);
-    console.log(surname);
-    console.log(email);
-    console.log(message);
-    console.log(url);
-
 
     /* Send the data using post */
     var posting = $.post(url, {
@@ -42,14 +32,10 @@ $("#contact-form").submit(function(event) {
         email: email,
         message: message
     });
-
-    // /* Put the results in a div */
+    // // /* Put the results in a div */
     posting.done(function(data) {
         $("#result").empty();
-        console.log("Duspko");
-        console.log(data);
         content = jQuery.parseJSON(data);
-        console.log(content);
         if (content.errors && content.errors.length) {
             content.errors.forEach((element) => {
                 $("#result").append('<div class="msg error" >' + element.msg + '</div>');
@@ -59,5 +45,8 @@ $("#contact-form").submit(function(event) {
                 $("#result").append('<div class="msg success" >' + element.msg + '</div>');
             });
         }
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $("#kontakt").offset().top
+        }, 1000);
     });
 });

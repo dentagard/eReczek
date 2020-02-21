@@ -62,11 +62,11 @@ function sendEmailToClient($message, $name, $surname, $to)
 {
     $subject = 'Wiadomość z portalu eReczek';
     $body = 'Witaj ' . $name . ' ' . $surname . PHP_EOL
-        . 'Wysłałeś wiadomość o treści:' . PHP_EOL
+        . 'Otrzymałem Twoją wiadomość o treści:' . PHP_EOL
         . '------------------------------------------------------' . PHP_EOL
         . $message . PHP_EOL
         . '------------------------------------------------------' . PHP_EOL
-        . 'Proszę czekać na kontakt.' . PHP_EOL . PHP_EOL
+        . 'Niedługo się z Tobą skontaktuje.' . PHP_EOL . PHP_EOL
         . 'Pozdrawiam';
     $headers = array('From: kontakt@ereczek.pl');
 

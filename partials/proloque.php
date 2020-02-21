@@ -19,8 +19,8 @@
                 <i class="fas fa-tasks fa-4x"></i>
                 <h3>Zarządzanie treścią</h3>
                 <p>Systemy zarządzania treścią (CMS) szczególnie przydają się jeżeli potrzebujemy często zmieniać 
-                   zawartością witryny. Dzięki systemowi zarządzania treścią, możesz samodzielnie edytować zawartość strony. 
-                   Dodawać/usuwać posty, edytować ceny oraz listę towarów w sklepach intenetowych itd.</p>
+                   zawartością witryny. Dzięki systemowi zarządzania treścią, możesz samodzielnie edytować zawartość strony: 
+                   dodawać/usuwać posty, edytować ceny oraz listę towarów w sklepach intenetowych itd.</p>
             </div>
         </div>
     </div>
