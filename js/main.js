@@ -15,6 +15,7 @@ $('.owl-carousel').owlCarousel({
 
 
 $("#contact-form").submit(function(event) {
+    console.log('Chuj w dupe');
     event.preventDefault();
     // /* get some values from elements on the page: */
     let $form = $(this);
