@@ -66,7 +66,7 @@ function sendEmailToClient($message, $name, $surname, $to)
         . '------------------------------------------------------' . PHP_EOL
         . $message . PHP_EOL
         . '------------------------------------------------------' . PHP_EOL
-        . 'Niedługo się z Tobą skontaktuje.' . PHP_EOL . PHP_EOL
+        . 'Niedługo się z Tobą skontaktuję.' . PHP_EOL . PHP_EOL
         . 'Pozdrawiam';
     $headers = array('From: kontakt@ereczek.pl');
 
