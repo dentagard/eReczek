@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-md navbar-light bg-primary fixed-top pl-5 pr-5 container">
-    <a class="navbar-brand border border-dark pl-5 pr-5 bg-light resize" href="#">eReczek</a>
+    <a class="navbar-brand border border-dark pl-5 pr-5 bg-light resize nav-link" href="">eReczek</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain"
         aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>

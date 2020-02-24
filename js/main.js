@@ -50,3 +50,16 @@ $("#contact-form").submit(function(event) {
         }, 1000);
     });
 });
+
+
+$(".nav-link").click(function(event) {
+    event.preventDefault();
+    let $link = $(this);
+    let target = $link.attr('href');
+    if (target == "") {
+        target = "head";
+    }
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $(target).offset().top
+    }, 1000);
+})
