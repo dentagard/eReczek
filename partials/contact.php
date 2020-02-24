@@ -5,7 +5,7 @@
         </div>
         <div class="row">
             <div class="col-md-6">
-                <a class="h5 text-white" href="mailto: abc@example.com">Napisz mejla: kontakt@ereczek.pl</a>
+                <a class="h5 text-white" href="mailto: biuro@ereczek.pl">Napisz mejla: biuro@ereczek.pl</a>
             </div>
             <div class="col-md-6">
                 <p class="h5 float-right float-left-on-small">Zadzwoń: (+48) 501 383 149</p>
