@@ -53,7 +53,7 @@ function sendEmailToMe($message, $name, $surname, $sender_email)
     $body = 'Otrzymałeś nową wiadomość od:' . PHP_EOL . $name . ' ' . $surname . PHP_EOL
         . 'Treść wiadomości:' . PHP_EOL . $message . PHP_EOL
         . 'Odpowiedz na adres: ' . $sender_email;
-    $headers = array('From: kontakt@ereczek.pl');
+    $headers = array('From: noreply@ereczek.pl');
 
     return wp_mail($to, $subject, $body, $headers);
 }
@@ -68,7 +68,7 @@ function sendEmailToClient($message, $name, $surname, $to)
         . '------------------------------------------------------' . PHP_EOL
         . 'Niedługo się z Tobą skontaktuję.' . PHP_EOL . PHP_EOL
         . 'Pozdrawiam';
-    $headers = array('From: kontakt@ereczek.pl');
+    $headers = array('From: noreply@ereczek.pl');
 
     return wp_mail($to, $subject, $body, $headers);
 }
